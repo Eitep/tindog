@@ -50,3 +50,14 @@ h1 {
     width: 60%;
     transform: rotate(12deg);
 }
+
+.icons {
+    text-align: center;
+}
+
+.fa {
+    color:  #ff4c68;
+}
+.fa:hover    {
+    color:  #8b0c1f;
+}
