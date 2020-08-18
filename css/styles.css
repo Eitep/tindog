@@ -1,7 +1,13 @@
 body {
     font-family: "Montserrat", sans-serif;  
 }
-
+footer {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
@@ -26,9 +32,10 @@ p {
 #title {
     background-color: #ff4c68;
     color: white;
+    
 }
 .container-fluid {
-    padding: 3% 15%; 
+    padding: 3% 15% 7%; 
 }
 
 /* Navigation Bar */
@@ -63,11 +70,27 @@ p {
 .title-image {
     width: 60%;
     transform: rotate(12deg);
+    position: absolute;
+    right: 15%;
+}
+
+@media (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+
+    .title {
+        text-align: center;
+    }
 }
 /* Features */
 
 #features {
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .feature-box {
@@ -110,4 +133,40 @@ p {
 .press-logo {
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+    padding: 8%;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.pricing-title {
+    text-align: center;
+}
+
+/* Call To Action */
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+    color: white;
+    padding: 7% 15%;  
+}
+.bottom-section-button {
+    margin: 5% 3% 5% 0;
+}
+.bottom-section-h3 {
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.footer-icon {
+    padding-left: 10px;
+    padding-right: 10px;
 }
